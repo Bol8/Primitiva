@@ -13,10 +13,14 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-/*
- * @staruml
+/**
  * 
- * 
+ * @author Oscar
+ *@startuml
+ *MainActivity -[#red]> Primitiva : Hace llamada a método getNumeros
+ *MainActivity <[#0000FF]-- Primitiva: Devuelve la combinación de números
+ *note left:Muestra combinación y guarda preferencias
+ *@enduml
  */
 public class MainActivity extends ActionBarActivity {
 	Button btn;
