@@ -39,7 +39,7 @@ public class MainActivity extends ActionBarActivity {
 		sdp = getSharedPreferences("preferences", MODE_PRIVATE);
 
 		if (sdp.contains("Val1")) {
-			txV.setText(sdp.getString("Val1",""));
+			txV.setText(sdp.getString("Val1", ""));
 		}
 	}
 
@@ -65,13 +65,15 @@ public class MainActivity extends ActionBarActivity {
 	public void pulsaBoton(View v) {
 		numeros = Primitiva.getNumeros();
 		txV.setText(numeros);
-		//guardarDatos();
+		// guardarDatos();
 	}
 
 	private void guardarDatos() {
 		if (r1.isChecked() == true) {
 			guardaResult();
-			Log.i("Main", "Archivos guardados");
+			Log.i("Main", "Números guardados");
+		} else {
+			Log.i("Main", "No se guardaron los números");
 		}
 	}
 
