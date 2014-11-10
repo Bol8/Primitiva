@@ -67,6 +67,11 @@ public class MainActivity extends ActionBarActivity {
 		txV.setText(numeros);
 		// guardarDatos();
 	}
+	
+	public void LimpiarCaja(View v) {
+		txV.setText("");
+		borraDatos();
+	}
 
 	private void guardarDatos() {
 		if (r1.isChecked() == true) {
